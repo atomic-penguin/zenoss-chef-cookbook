@@ -32,7 +32,7 @@ if node['platform_family'] == "rhel"
   
   end
 
-  %w[rpmforge-extras rpmformge].each do |repo|
+  %w[rpmforge-extras rpmforge].each do |repo|
     yum_repository repo do
       action :remove
     end
